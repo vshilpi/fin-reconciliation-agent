@@ -21,7 +21,7 @@ def main():
     
     # Identify cases not found in System B
     sysb_cases = agent.categorize_not_found_sysb(processed_data)
-    agent.upload_file(sysb_cases, 'not_found_sysb.csv', 'reports')
+    agent.upload_file(sysb_cases, 'not_found_sysb.csv', 'uploads')
 
     # Process resolution comments and classify cases
     results = agent.process_resolutions(sysb_cases, resolution_data)
